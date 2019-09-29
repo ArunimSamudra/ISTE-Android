@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/alice_blue"
     tools:context=".MainActivity">
 
 
@@ -16,9 +17,10 @@
         android:layout_marginEnd="162dp"
         android:layout_marginRight="162dp"
         android:layout_marginBottom="131dp"
-        android:text="@string/_logins"
+        android:text="@string/_login"
         android:textStyle="bold"
         android:onClick="check"
+        android:background="@color/lightskyblue"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -34,8 +36,10 @@
         android:layout_marginBottom="207dp"
         android:autofillHints=""
         android:ems="10"
-        android:hint="Password"
+        android:hint="@string/_password"
         android:inputType="textPassword"
+        android:textColorLink="#87CEFA"
+        android:textCursorDrawable="@color/black"
         app:layout_constraintBottom_toTopOf="@+id/button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -53,6 +57,8 @@
         android:ems="10"
         android:hint="@string/_username"
         android:inputType="textPersonName"
+        android:textColorLink="#87CEFA"
+        android:textCursorDrawable="@color/black"
         app:layout_constraintBottom_toTopOf="@+id/editText"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
